@@ -30,7 +30,7 @@ import lombok.NonNull;
 @Data
 @NoArgsConstructor
 @Entity
-@Table(uniqueConstraints = { @UniqueConstraint(columnNames = { "name", "type" }) })
+@Table(uniqueConstraints = { @UniqueConstraint(columnNames = { "name", "type", "parent_id" }) })
 public class Category {
 
 	@Id
